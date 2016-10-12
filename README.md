@@ -23,3 +23,12 @@ It kind of sucks that there are so many steps required to add Awesomium to oF, b
 1. Drag "Awesomium.framework" from the Project Navigator and drop it on the section called "Link Binary With Libraries"
 1. In the Menu bar, go to Editor > Add Build Phase > Add Copy Files Build Phase
 1. In the resulting "Copy Files" build phase, change "Destination" to "Executables", and drag Awesomium.framework (again) from the Project Navigator to where it says "Add Files Here"
+
+## Using ProjectGenerator on Windows
+The instructions for Windows are quite involved as well. Begin by opening the [Windows installation instructions](http://wiki.awesomium.com/getting-started/setting-up-on-windows.html). You'll need them for several steps.
+
+1. Generate a project using the Project generator. Make sure to check off ofxAwesomium in the addons list
+2. Add your code or copy the example code into your project
+3. In the ```Set up your project``` section of the Windows installation instructions, follow steps 3-6 to add the necessary paths to your Visual Studios solution
+4. Follow the instructions in the ```Copy files to your build distribution``` section and copy the files into the project's ```bin``` folder
+5. Proceed to build your project
