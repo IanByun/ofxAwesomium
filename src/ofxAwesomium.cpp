@@ -48,7 +48,7 @@ bool ofxAwesomium::update() {
     surface = (BitmapSurface*)web_view->surface();
     
     if(surface && surface->buffer() && surface->is_dirty()) {
-		surface->CopyTo(frame.getPixels(), frame.getWidth()*4, 4, true, false);
+		surface->CopyTo(frame.getPixels().getData(), frame.getWidth()*4, 4, true, false);
 		frame.update();
 		return true;
     }
