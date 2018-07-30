@@ -9,7 +9,7 @@
 #include "ofxAwesomium.h"
 
 // ----------------------------------------------------------------
-ofxAwesomium::~ofxAwesomium(){
+ofxAwesomium::~ofxAwesomium() {
 	web_view->Destroy();
 }
 
@@ -56,14 +56,14 @@ bool ofxAwesomium::update() {
 }
 
 // ----------------------------------------------------------------
-string ofxAwesomium::getTitle(){
+string ofxAwesomium::getTitle() {
 	char buf[1024];
     web_view->title().ToUTF8( buf, 1024 );
 	return string(buf);
 }
 
 // ----------------------------------------------------------------
-bool ofxAwesomium::getIsLoading(){
+bool ofxAwesomium::getIsLoading() {
 	return web_view->IsLoading();
 }
 
@@ -143,17 +143,17 @@ void ofxAwesomium::keyReleased(int key) {
 }
 
 //--------------------------------------------------------------
-void ofxAwesomium::mouseMoved(int x, int y ){
+void ofxAwesomium::mouseMoved(int x, int y ) {
     web_view->InjectMouseMove( x, y );
 }
 
 //--------------------------------------------------------------
-void ofxAwesomium::mouseDragged(int x, int y, int button){
+void ofxAwesomium::mouseDragged(int x, int y, int button) {
     web_view->InjectMouseMove( x, y );
 }
 
 //--------------------------------------------------------------
-void ofxAwesomium::mousePressed(int x, int y, int button){
+void ofxAwesomium::mousePressed(int x, int y, int button) {
     if( button ==  OF_MOUSE_BUTTON_1)
         web_view->InjectMouseDown( Awesomium::kMouseButton_Left );
     else if( button == OF_MOUSE_BUTTON_2 )
@@ -163,7 +163,7 @@ void ofxAwesomium::mousePressed(int x, int y, int button){
 }
 
 //--------------------------------------------------------------
-void ofxAwesomium::mouseReleased(int x, int y, int button){
+void ofxAwesomium::mouseReleased(int x, int y, int button) {
     if( button ==  OF_MOUSE_BUTTON_1)
         web_view->InjectMouseUp( Awesomium::kMouseButton_Left );
     else if( button == OF_MOUSE_BUTTON_2 )

@@ -1,14 +1,14 @@
-#include "testApp.h"
+#include "ofApp.h"
 
 //--------------------------------------------------------------
-void testApp::setup(){
-	browser.setup(800, 600);
-	browser.loadURL("http://www.google.com");
+void ofApp::setup() {
+	browser.setup(ofGetWidth()-30, ofGetHeight()-30);
+	browser.loadURL("https://m.naver.com");
 	
 }
 
 //--------------------------------------------------------------
-void testApp::update(){
+void ofApp::update() {
 	ofxAwesomium::updateCore();
 	browser.update();
 	
@@ -16,56 +16,56 @@ void testApp::update(){
 }
 
 //--------------------------------------------------------------
-void testApp::draw(){
+void ofApp::draw() {
 	if(browser.getIsLoading()) {
 		ofSetColor(0);
 		ofDrawBitmapString("Loading...", 10, 15);
 	}
 	ofSetColor(255);
-	browser.draw(10, 30);
+	browser.draw(10, 10);
 }
 
 //--------------------------------------------------------------
-void testApp::keyPressed(int key){
+void ofApp::keyPressed(int key) {
 	browser.keyPressed(key);
 }
 
 //--------------------------------------------------------------
-void testApp::keyReleased(int key){
+void ofApp::keyReleased(int key) {
 	browser.keyReleased(key);
 }
 
 //--------------------------------------------------------------
-void testApp::mouseMoved(int x, int y ){
+void ofApp::mouseMoved(int x, int y ) {
 	browser.mouseMoved(x, y);
 }
 
 //--------------------------------------------------------------
-void testApp::mouseDragged(int x, int y, int button){
+void ofApp::mouseDragged(int x, int y, int button) {
 	browser.mouseDragged(x, y, button);
 }
 
 //--------------------------------------------------------------
-void testApp::mousePressed(int x, int y, int button){
+void ofApp::mousePressed(int x, int y, int button) {
 	browser.mousePressed(x, y, button);
 }
 
 //--------------------------------------------------------------
-void testApp::mouseReleased(int x, int y, int button){
+void ofApp::mouseReleased(int x, int y, int button) {
 	browser.mouseReleased(x, y, button);
 }
 
 //--------------------------------------------------------------
-void testApp::windowResized(int w, int h){
+void ofApp::windowResized(int w, int h) {
 
 }
 
 //--------------------------------------------------------------
-void testApp::gotMessage(ofMessage msg){
+void ofApp::gotMessage(ofMessage msg) {
 
 }
 
 //--------------------------------------------------------------
-void testApp::dragEvent(ofDragInfo dragInfo){ 
+void ofApp::dragEvent(ofDragInfo dragInfo) { 
 
 }

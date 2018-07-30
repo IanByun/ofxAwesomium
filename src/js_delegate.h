@@ -149,7 +149,7 @@ namespace detail {	// we'll hide the implementation details in a nested namespac
 // anything nasty. 
 // Usage is identical to static_cast<>
 template <class OutputClass, class InputClass>
-inline OutputClass implicit_cast(InputClass input){
+inline OutputClass implicit_cast(InputClass input) {
 	return input;
 }
 
@@ -170,7 +170,7 @@ union horrible_union{
 };
 
 template <class OutputClass, class InputClass>
-inline OutputClass horrible_cast(const InputClass input){
+inline OutputClass horrible_cast(const InputClass input) {
 	horrible_union<OutputClass, InputClass> u;
 	// Cause a compile-time error if in, out and u are not the same size.
 	// If the compile fails here, it means the compiler has peculiar
@@ -799,7 +799,7 @@ public:
 #endif // !defined(FASTDELEGATE_USESTATICFUNCTIONHACK)
 
 	// Does the closure contain this static function?
-	inline bool IsEqualToStaticFuncPtr(StaticFuncPtr funcptr){
+	inline bool IsEqualToStaticFuncPtr(StaticFuncPtr funcptr) {
 		if (funcptr==0) return empty(); 
 	// For the Evil method, if it doesn't actually contain a static function, this will return an arbitrary
 	// value that is not equal to any valid function pointer.
