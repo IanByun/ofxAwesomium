@@ -10,7 +10,7 @@
 		<ClCompile Include="src\main.cpp">
 			<Filter>src</Filter>
 		</ClCompile>
-		<ClCompile Include="src\testApp.cpp">
+		<ClCompile Include="src\ofApp.cpp">
 			<Filter>src</Filter>
 		</ClCompile>
 		<ClCompile Include="..\..\..\addons\ofxAwesomium\src\ofxAwesomium.cpp">
@@ -30,12 +30,24 @@
 		<Filter Include="addons\ofxAwesomium\src">
 			<UniqueIdentifier>{5942C2B6-C767-1314-D010-9DA4}</UniqueIdentifier>
 		</Filter>
+		<Filter Include="addons\ofxAwesomium\libs">
+			<UniqueIdentifier>{F382B703-B957-0118-01FE-4EDF}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxAwesomium\libs\awesomium_1.7.5.1">
+			<UniqueIdentifier>{1CFE3580-C6EB-F278-60E7-A7CA}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxAwesomium\libs\awesomium_1.7.5.1\includes">
+			<UniqueIdentifier>{E2A140BA-FB76-B1C4-D43F-D3EF}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxAwesomium\libs\awesomium_1.7.5.1\includes\Awesomium">
+			<UniqueIdentifier>{EA42346A-B60B-EDF1-ED3B-B6E0}</UniqueIdentifier>
+		</Filter>
 	</ItemGroup>
 	<ItemGroup>
 		<ClInclude Include="src\ofApp.h">
 			<Filter>src</Filter>
 		</ClInclude>
-		<ClInclude Include="src\testApp.h">
+		<ClInclude Include="src\ofApp.h">
 			<Filter>src</Filter>
 		</ClInclude>
 		<ClInclude Include="..\..\..\addons\ofxAwesomium\src\js_delegate.h">
@@ -43,6 +55,81 @@
 		</ClInclude>
 		<ClInclude Include="..\..\..\addons\ofxAwesomium\src\ofxAwesomium.h">
 			<Filter>addons\ofxAwesomium\src</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxAwesomium\libs\awesomium_1.7.5.1\includes\Awesomium\BitmapSurface.h">
+			<Filter>addons\ofxAwesomium\libs\awesomium_1.7.5.1\includes\Awesomium</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxAwesomium\libs\awesomium_1.7.5.1\includes\Awesomium\ChildProcess.h">
+			<Filter>addons\ofxAwesomium\libs\awesomium_1.7.5.1\includes\Awesomium</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxAwesomium\libs\awesomium_1.7.5.1\includes\Awesomium\DataPak.h">
+			<Filter>addons\ofxAwesomium\libs\awesomium_1.7.5.1\includes\Awesomium</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxAwesomium\libs\awesomium_1.7.5.1\includes\Awesomium\DataSource.h">
+			<Filter>addons\ofxAwesomium\libs\awesomium_1.7.5.1\includes\Awesomium</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxAwesomium\libs\awesomium_1.7.5.1\includes\Awesomium\JSArray.h">
+			<Filter>addons\ofxAwesomium\libs\awesomium_1.7.5.1\includes\Awesomium</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxAwesomium\libs\awesomium_1.7.5.1\includes\Awesomium\JSObject.h">
+			<Filter>addons\ofxAwesomium\libs\awesomium_1.7.5.1\includes\Awesomium</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxAwesomium\libs\awesomium_1.7.5.1\includes\Awesomium\JSValue.h">
+			<Filter>addons\ofxAwesomium\libs\awesomium_1.7.5.1\includes\Awesomium</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxAwesomium\libs\awesomium_1.7.5.1\includes\Awesomium\Platform.h">
+			<Filter>addons\ofxAwesomium\libs\awesomium_1.7.5.1\includes\Awesomium</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxAwesomium\libs\awesomium_1.7.5.1\includes\Awesomium\PrintConfig.h">
+			<Filter>addons\ofxAwesomium\libs\awesomium_1.7.5.1\includes\Awesomium</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxAwesomium\libs\awesomium_1.7.5.1\includes\Awesomium\ResourceInterceptor.h">
+			<Filter>addons\ofxAwesomium\libs\awesomium_1.7.5.1\includes\Awesomium</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxAwesomium\libs\awesomium_1.7.5.1\includes\Awesomium\STLHelpers.h">
+			<Filter>addons\ofxAwesomium\libs\awesomium_1.7.5.1\includes\Awesomium</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxAwesomium\libs\awesomium_1.7.5.1\includes\Awesomium\Surface.h">
+			<Filter>addons\ofxAwesomium\libs\awesomium_1.7.5.1\includes\Awesomium</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxAwesomium\libs\awesomium_1.7.5.1\includes\Awesomium\WebConfig.h">
+			<Filter>addons\ofxAwesomium\libs\awesomium_1.7.5.1\includes\Awesomium</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxAwesomium\libs\awesomium_1.7.5.1\includes\Awesomium\WebCore.h">
+			<Filter>addons\ofxAwesomium\libs\awesomium_1.7.5.1\includes\Awesomium</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxAwesomium\libs\awesomium_1.7.5.1\includes\Awesomium\WebKeyboardCodes.h">
+			<Filter>addons\ofxAwesomium\libs\awesomium_1.7.5.1\includes\Awesomium</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxAwesomium\libs\awesomium_1.7.5.1\includes\Awesomium\WebKeyboardEvent.h">
+			<Filter>addons\ofxAwesomium\libs\awesomium_1.7.5.1\includes\Awesomium</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxAwesomium\libs\awesomium_1.7.5.1\includes\Awesomium\WebMenuItem.h">
+			<Filter>addons\ofxAwesomium\libs\awesomium_1.7.5.1\includes\Awesomium</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxAwesomium\libs\awesomium_1.7.5.1\includes\Awesomium\WebPreferences.h">
+			<Filter>addons\ofxAwesomium\libs\awesomium_1.7.5.1\includes\Awesomium</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxAwesomium\libs\awesomium_1.7.5.1\includes\Awesomium\WebSession.h">
+			<Filter>addons\ofxAwesomium\libs\awesomium_1.7.5.1\includes\Awesomium</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxAwesomium\libs\awesomium_1.7.5.1\includes\Awesomium\WebString.h">
+			<Filter>addons\ofxAwesomium\libs\awesomium_1.7.5.1\includes\Awesomium</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxAwesomium\libs\awesomium_1.7.5.1\includes\Awesomium\WebStringArray.h">
+			<Filter>addons\ofxAwesomium\libs\awesomium_1.7.5.1\includes\Awesomium</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxAwesomium\libs\awesomium_1.7.5.1\includes\Awesomium\WebTouchEvent.h">
+			<Filter>addons\ofxAwesomium\libs\awesomium_1.7.5.1\includes\Awesomium</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxAwesomium\libs\awesomium_1.7.5.1\includes\Awesomium\WebURL.h">
+			<Filter>addons\ofxAwesomium\libs\awesomium_1.7.5.1\includes\Awesomium</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxAwesomium\libs\awesomium_1.7.5.1\includes\Awesomium\WebView.h">
+			<Filter>addons\ofxAwesomium\libs\awesomium_1.7.5.1\includes\Awesomium</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxAwesomium\libs\awesomium_1.7.5.1\includes\Awesomium\WebViewListener.h">
+			<Filter>addons\ofxAwesomium\libs\awesomium_1.7.5.1\includes\Awesomium</Filter>
 		</ClInclude>
 	</ItemGroup>
 	<ItemGroup>

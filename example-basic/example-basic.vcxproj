@@ -95,15 +95,15 @@
 			<PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
 			<RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
 			<WarningLevel>Level3</WarningLevel>
-			<AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);src;..\..\..\addons\ofxAwesomium\src;$(AWE_DIR)include</AdditionalIncludeDirectories>
+			<AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);src;..\..\..\addons\ofxAwesomium\libs;..\..\..\addons\ofxAwesomium\libs\awesomium_1.7.5.1;..\..\..\addons\ofxAwesomium\libs\awesomium_1.7.5.1\includes;..\..\..\addons\ofxAwesomium\libs\awesomium_1.7.5.1\includes\Awesomium;..\..\..\addons\ofxAwesomium\libs\awesomium_1.7.5.1\lib;..\..\..\addons\ofxAwesomium\libs\awesomium_1.7.5.1\lib\vs;..\..\..\addons\ofxAwesomium\libs\awesomium_1.7.5.1\lib\vs\Win32;..\..\..\addons\ofxAwesomium\libs\awesomium_1.7.5.1\lib\vs\Win32\Debug;..\..\..\addons\ofxAwesomium\libs\awesomium_1.7.5.1\lib\vs\Win32\Release;..\..\..\addons\ofxAwesomium\libs\awesomium_1.7.5.1\lib\vs\x64;..\..\..\addons\ofxAwesomium\libs\awesomium_1.7.5.1\lib\vs\x64\Debug;..\..\..\addons\ofxAwesomium\libs\awesomium_1.7.5.1\lib\vs\x64\Release;..\..\..\addons\ofxAwesomium\src;..\..\..\addons\ofxAwesomium\include</AdditionalIncludeDirectories>
 			<CompileAs>CompileAsCpp</CompileAs>
 		</ClCompile>
 		<Link>
 			<GenerateDebugInformation>true</GenerateDebugInformation>
 			<SubSystem>Console</SubSystem>
 			<RandomizedBaseAddress>false</RandomizedBaseAddress>
-			<AdditionalDependencies>$(AWE_DIR)build/lib;%(AdditionalDependencies)</AdditionalDependencies>
-			<AdditionalLibraryDirectories>awesomium.lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+			<AdditionalDependencies>%(AdditionalDependencies);awesomium.lib</AdditionalDependencies>
+			<AdditionalLibraryDirectories>%(AdditionalLibraryDirectories);..\..\..\addons\ofxAwesomium\libs\awesomium_1.7.5.1\lib\vs\Win32\Debug</AdditionalLibraryDirectories>
 		</Link>
 		<PostBuildEvent />
 	</ItemDefinitionGroup>
@@ -114,7 +114,7 @@
 			<PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
 			<RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
 			<WarningLevel>Level3</WarningLevel>
-			<AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);src;..\..\..\addons\ofxAwesomium\src;$(AWE_DIR)include</AdditionalIncludeDirectories>
+			<AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);src;..\..\..\addons\ofxAwesomium\libs;..\..\..\addons\ofxAwesomium\libs\awesomium_1.7.5.1;..\..\..\addons\ofxAwesomium\libs\awesomium_1.7.5.1\includes;..\..\..\addons\ofxAwesomium\libs\awesomium_1.7.5.1\includes\Awesomium;..\..\..\addons\ofxAwesomium\libs\awesomium_1.7.5.1\lib;..\..\..\addons\ofxAwesomium\libs\awesomium_1.7.5.1\lib\vs;..\..\..\addons\ofxAwesomium\libs\awesomium_1.7.5.1\lib\vs\Win32;..\..\..\addons\ofxAwesomium\libs\awesomium_1.7.5.1\lib\vs\Win32\Debug;..\..\..\addons\ofxAwesomium\libs\awesomium_1.7.5.1\lib\vs\Win32\Release;..\..\..\addons\ofxAwesomium\libs\awesomium_1.7.5.1\lib\vs\x64;..\..\..\addons\ofxAwesomium\libs\awesomium_1.7.5.1\lib\vs\x64\Debug;..\..\..\addons\ofxAwesomium\libs\awesomium_1.7.5.1\lib\vs\x64\Release;..\..\..\addons\ofxAwesomium\src;..\..\..\addons\ofxAwesomium\include</AdditionalIncludeDirectories>
 			<CompileAs>CompileAsCpp</CompileAs>
 			<MultiProcessorCompilation>true</MultiProcessorCompilation>
 		</ClCompile>
@@ -122,8 +122,8 @@
 			<GenerateDebugInformation>true</GenerateDebugInformation>
 			<SubSystem>Console</SubSystem>
 			<RandomizedBaseAddress>false</RandomizedBaseAddress>
-			<AdditionalDependencies>$(AWE_DIR)build/lib;%(AdditionalDependencies)</AdditionalDependencies>
-			<AdditionalLibraryDirectories>awesomium.lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+			<AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+			<AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
 		</Link>
 		<PostBuildEvent />
 	</ItemDefinitionGroup>
@@ -133,7 +133,7 @@
 			<PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
 			<RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
 			<WarningLevel>Level3</WarningLevel>
-			<AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);src;..\..\..\addons\ofxAwesomium\src;$(AWE_DIR)include</AdditionalIncludeDirectories>
+			<AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);src;..\..\..\addons\ofxAwesomium\libs;..\..\..\addons\ofxAwesomium\libs\awesomium_1.7.5.1;..\..\..\addons\ofxAwesomium\libs\awesomium_1.7.5.1\includes;..\..\..\addons\ofxAwesomium\libs\awesomium_1.7.5.1\includes\Awesomium;..\..\..\addons\ofxAwesomium\libs\awesomium_1.7.5.1\lib;..\..\..\addons\ofxAwesomium\libs\awesomium_1.7.5.1\lib\vs;..\..\..\addons\ofxAwesomium\libs\awesomium_1.7.5.1\lib\vs\Win32;..\..\..\addons\ofxAwesomium\libs\awesomium_1.7.5.1\lib\vs\Win32\Debug;..\..\..\addons\ofxAwesomium\libs\awesomium_1.7.5.1\lib\vs\Win32\Release;..\..\..\addons\ofxAwesomium\libs\awesomium_1.7.5.1\lib\vs\x64;..\..\..\addons\ofxAwesomium\libs\awesomium_1.7.5.1\lib\vs\x64\Debug;..\..\..\addons\ofxAwesomium\libs\awesomium_1.7.5.1\lib\vs\x64\Release;..\..\..\addons\ofxAwesomium\src;..\..\..\addons\ofxAwesomium\include</AdditionalIncludeDirectories>
 			<CompileAs>CompileAsCpp</CompileAs>
 			<MultiProcessorCompilation>true</MultiProcessorCompilation>
 		</ClCompile>
@@ -144,8 +144,8 @@
 			<OptimizeReferences>true</OptimizeReferences>
 			<EnableCOMDATFolding>true</EnableCOMDATFolding>
 			<RandomizedBaseAddress>false</RandomizedBaseAddress>
-			<AdditionalDependencies>$(AWE_DIR)build/lib;%(AdditionalDependencies)</AdditionalDependencies>
-			<AdditionalLibraryDirectories>awesomium.lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+			<AdditionalDependencies>%(AdditionalDependencies);awesomium.lib</AdditionalDependencies>
+			<AdditionalLibraryDirectories>%(AdditionalLibraryDirectories);..\..\..\addons\ofxAwesomium\libs\awesomium_1.7.5.1\lib\vs\Win32\Release</AdditionalLibraryDirectories>
 		</Link>
 		<PostBuildEvent />
 	</ItemDefinitionGroup>
@@ -155,7 +155,7 @@
 			<PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
 			<RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
 			<WarningLevel>Level3</WarningLevel>
-			<AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);src;..\..\..\addons\ofxAwesomium\src;$(AWE_DIR)include</AdditionalIncludeDirectories>
+			<AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);src;..\..\..\addons\ofxAwesomium\libs;..\..\..\addons\ofxAwesomium\libs\awesomium_1.7.5.1;..\..\..\addons\ofxAwesomium\libs\awesomium_1.7.5.1\includes;..\..\..\addons\ofxAwesomium\libs\awesomium_1.7.5.1\includes\Awesomium;..\..\..\addons\ofxAwesomium\libs\awesomium_1.7.5.1\lib;..\..\..\addons\ofxAwesomium\libs\awesomium_1.7.5.1\lib\vs;..\..\..\addons\ofxAwesomium\libs\awesomium_1.7.5.1\lib\vs\Win32;..\..\..\addons\ofxAwesomium\libs\awesomium_1.7.5.1\lib\vs\Win32\Debug;..\..\..\addons\ofxAwesomium\libs\awesomium_1.7.5.1\lib\vs\Win32\Release;..\..\..\addons\ofxAwesomium\libs\awesomium_1.7.5.1\lib\vs\x64;..\..\..\addons\ofxAwesomium\libs\awesomium_1.7.5.1\lib\vs\x64\Debug;..\..\..\addons\ofxAwesomium\libs\awesomium_1.7.5.1\lib\vs\x64\Release;..\..\..\addons\ofxAwesomium\src;..\..\..\addons\ofxAwesomium\include</AdditionalIncludeDirectories>
 			<CompileAs>CompileAsCpp</CompileAs>
 		</ClCompile>
 		<Link>
@@ -165,22 +165,45 @@
 			<OptimizeReferences>true</OptimizeReferences>
 			<EnableCOMDATFolding>true</EnableCOMDATFolding>
 			<RandomizedBaseAddress>false</RandomizedBaseAddress>
-			<AdditionalDependencies>$(AWE_DIR)build/lib;%(AdditionalDependencies)</AdditionalDependencies>
-			<AdditionalLibraryDirectories>awesomium.lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+			<AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+			<AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
 		</Link>
 		<PostBuildEvent />
 	</ItemDefinitionGroup>
 	<ItemGroup>
 		<ClCompile Include="src\main.cpp" />
 		<ClCompile Include="src\ofApp.cpp" />
-		<ClCompile Include="src\testApp.cpp" />
 		<ClCompile Include="..\..\..\addons\ofxAwesomium\src\ofxAwesomium.cpp" />
 	</ItemGroup>
 	<ItemGroup>
 		<ClInclude Include="src\ofApp.h" />
-		<ClInclude Include="src\testApp.h" />
 		<ClInclude Include="..\..\..\addons\ofxAwesomium\src\js_delegate.h" />
 		<ClInclude Include="..\..\..\addons\ofxAwesomium\src\ofxAwesomium.h" />
+		<ClInclude Include="..\..\..\addons\ofxAwesomium\libs\awesomium_1.7.5.1\includes\Awesomium\BitmapSurface.h" />
+		<ClInclude Include="..\..\..\addons\ofxAwesomium\libs\awesomium_1.7.5.1\includes\Awesomium\ChildProcess.h" />
+		<ClInclude Include="..\..\..\addons\ofxAwesomium\libs\awesomium_1.7.5.1\includes\Awesomium\DataPak.h" />
+		<ClInclude Include="..\..\..\addons\ofxAwesomium\libs\awesomium_1.7.5.1\includes\Awesomium\DataSource.h" />
+		<ClInclude Include="..\..\..\addons\ofxAwesomium\libs\awesomium_1.7.5.1\includes\Awesomium\JSArray.h" />
+		<ClInclude Include="..\..\..\addons\ofxAwesomium\libs\awesomium_1.7.5.1\includes\Awesomium\JSObject.h" />
+		<ClInclude Include="..\..\..\addons\ofxAwesomium\libs\awesomium_1.7.5.1\includes\Awesomium\JSValue.h" />
+		<ClInclude Include="..\..\..\addons\ofxAwesomium\libs\awesomium_1.7.5.1\includes\Awesomium\Platform.h" />
+		<ClInclude Include="..\..\..\addons\ofxAwesomium\libs\awesomium_1.7.5.1\includes\Awesomium\PrintConfig.h" />
+		<ClInclude Include="..\..\..\addons\ofxAwesomium\libs\awesomium_1.7.5.1\includes\Awesomium\ResourceInterceptor.h" />
+		<ClInclude Include="..\..\..\addons\ofxAwesomium\libs\awesomium_1.7.5.1\includes\Awesomium\STLHelpers.h" />
+		<ClInclude Include="..\..\..\addons\ofxAwesomium\libs\awesomium_1.7.5.1\includes\Awesomium\Surface.h" />
+		<ClInclude Include="..\..\..\addons\ofxAwesomium\libs\awesomium_1.7.5.1\includes\Awesomium\WebConfig.h" />
+		<ClInclude Include="..\..\..\addons\ofxAwesomium\libs\awesomium_1.7.5.1\includes\Awesomium\WebCore.h" />
+		<ClInclude Include="..\..\..\addons\ofxAwesomium\libs\awesomium_1.7.5.1\includes\Awesomium\WebKeyboardCodes.h" />
+		<ClInclude Include="..\..\..\addons\ofxAwesomium\libs\awesomium_1.7.5.1\includes\Awesomium\WebKeyboardEvent.h" />
+		<ClInclude Include="..\..\..\addons\ofxAwesomium\libs\awesomium_1.7.5.1\includes\Awesomium\WebMenuItem.h" />
+		<ClInclude Include="..\..\..\addons\ofxAwesomium\libs\awesomium_1.7.5.1\includes\Awesomium\WebPreferences.h" />
+		<ClInclude Include="..\..\..\addons\ofxAwesomium\libs\awesomium_1.7.5.1\includes\Awesomium\WebSession.h" />
+		<ClInclude Include="..\..\..\addons\ofxAwesomium\libs\awesomium_1.7.5.1\includes\Awesomium\WebString.h" />
+		<ClInclude Include="..\..\..\addons\ofxAwesomium\libs\awesomium_1.7.5.1\includes\Awesomium\WebStringArray.h" />
+		<ClInclude Include="..\..\..\addons\ofxAwesomium\libs\awesomium_1.7.5.1\includes\Awesomium\WebTouchEvent.h" />
+		<ClInclude Include="..\..\..\addons\ofxAwesomium\libs\awesomium_1.7.5.1\includes\Awesomium\WebURL.h" />
+		<ClInclude Include="..\..\..\addons\ofxAwesomium\libs\awesomium_1.7.5.1\includes\Awesomium\WebView.h" />
+		<ClInclude Include="..\..\..\addons\ofxAwesomium\libs\awesomium_1.7.5.1\includes\Awesomium\WebViewListener.h" />
 	</ItemGroup>
 	<ItemGroup>
 		<ProjectReference Include="$(OF_ROOT)\libs\openFrameworksCompiled\project\vs\openframeworksLib.vcxproj">
